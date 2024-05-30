@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import Recipe, Ingredient, Rating, Comment
+from .models import Recipe
 
-class IngredientSerializer(serializers.ModelSerializer):
+class RecipeSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Ingredient
+        model = Recipe
         fields = '__all__'
